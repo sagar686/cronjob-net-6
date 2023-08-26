@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: mycronjob
+spec:
+  schedule: "*/5 * * * *" # Runs every 5 minutes. Build new schedule here: https://crontab.guru/
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: cron-job
+            image: sag61086/cron-job:latest # HERE
+            env:
+          restartPolicy: OnFailure

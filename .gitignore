@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/cronjob-net-6/.vs
+/cronjob-net-6/CronWorkerService/bin/Debug/net6.0
+/cronjob-net-6/CronWorkerService/obj
